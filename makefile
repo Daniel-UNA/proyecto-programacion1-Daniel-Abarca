@@ -2,6 +2,7 @@
 CC = g++
 CFLAGS = -Wall -std=c++11
 LDFLAGS = -static-libgcc -static-libstdc++
+DEBUGFLAGS = -g
 SRC_DIR = src
 BUILD_DIR = build/bin
 OBJ_DIR = build/obj
@@ -15,12 +16,13 @@ all: $(TARGET)
 
 # Regla para construir el ejecutable
 $(TARGET): $(OBJ_FILES)
+	@mkdir -p $(BUILD_DIR)
 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^
 
 # Regla para compilar archivos .cpp a archivos .o
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@mkdir -p $(OBJ_DIR)
-	$(CC) $(CFLAGS) -I$(INCLUDE_DIR) -c $< -o $@
+	$(CC) $(DEBUGFLAGS) $(CFLAGS) -I$(INCLUDE_DIR) -c $< -o $@
 
 # Regla para limpiar archivos generados
 
