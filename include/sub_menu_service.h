@@ -1,5 +1,5 @@
-#ifndef SUB_MENU_SERVICE
-#define SUB_MENU_SERVICE
+#ifndef SUB_MENU_SERVICE_H
+#define SUB_MENU_SERVICE_H
 
 #include <iostream>
 #include "sub_menu.h"

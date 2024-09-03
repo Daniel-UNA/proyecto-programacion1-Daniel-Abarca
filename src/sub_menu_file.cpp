@@ -30,7 +30,7 @@ void SubMenuFile::action(bool* programStatePtr){
         if (option == 1){
             clearScreen();
             std::cout << "Programa creado por Daniel Abarca." << std::endl;
-            std::getchar();
+            getchar();
         }
 
         if (option == 2){
@@ -38,9 +38,7 @@ void SubMenuFile::action(bool* programStatePtr){
             *programStatePtr = false;
         }
 
-        if (option == 3){
-            isRunning = false;
-        }
+        if (option == 3){ isRunning = false; }
 
         std::cin.clear();
         std::cin.ignore();

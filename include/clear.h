@@ -1,5 +1,5 @@
-#ifndef CLEAR
-#define CLEAR
+#ifndef CLEAR_H
+#define CLEAR_H
 
 #include <windows.h>
 

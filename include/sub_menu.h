@@ -1,9 +1,9 @@
-#ifndef SUB_MENU
-#define SUB_MENU
+#ifndef SUB_MENU_H
+#define SUB_MENU_H
 
 #include <iostream>
 #include "clear.h"
-#include "sub_menu_file.h"
+
 
 class SubMenu {
 private:

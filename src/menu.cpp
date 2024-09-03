@@ -1,7 +1,7 @@
 #include "menu.h"
 
 Menu::Menu(){
-    size = 2;
+    size = 1;
     submenus = new SubMenu*[size];
     for (register int i = 0; i < size; i++){
         submenus[i] = nullptr;

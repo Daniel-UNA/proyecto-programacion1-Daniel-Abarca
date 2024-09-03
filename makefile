@@ -22,7 +22,7 @@ $(TARGET): $(OBJ_FILES)
 # Regla para compilar archivos .cpp a archivos .o
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@mkdir -p $(OBJ_DIR)
-	$(CC) $(DEBUGFLAGS) $(CFLAGS) -I$(INCLUDE_DIR) -c $< -o $@
+	$(CC) $(DEBUGFLAGS) $(CFLAGS) -I $(INCLUDE_DIR) -c $< -o $@
 
 # Regla para limpiar archivos generados
 

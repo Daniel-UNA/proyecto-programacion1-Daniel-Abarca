@@ -1,21 +1,20 @@
-#ifndef SUB_MENU_FILE_H
-#define SUB_MENU_FILE_H
+#ifndef SUB_MENU_RESERVATION_H
+#define SUB_MENU_RESERVATION_H
 
 #include <iostream>
 #include "sub_menu.h"
 
-
-class SubMenuFile : public SubMenu{
+class SubMenuReservation : public SubMenu{
 private:
     std::string description;
 public:
 
-    SubMenuFile();
-    SubMenuFile(std::string inputDescription);
+    SubMenuReservation(std::string inputDescription);
+    SubMenuReservation();
     std::string getDescription();
     void setDescription(std::string inputDescription);
     void action(bool* programStatePtr);
-    ~SubMenuFile();
+    ~SubMenuReservation();
 };
 
 
