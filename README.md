@@ -1,2 +1,2 @@
 # proyecto-programacion1-Daniel-Abarca
-Primer proyector de Programacion I Universidad Nacional
+Primer proyecto de Programacion I de Daniel Abarca Ureña
