@@ -29,3 +29,7 @@ void Room::setNumOfSeats(int inputNumOfSeats) {
 void Room::setPrice(int inputPrice) {
     price = inputPrice;
 }
+
+Room::~Room() {
+    //GoodBye Room
+}

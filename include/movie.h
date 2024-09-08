@@ -17,6 +17,7 @@ public:
 
     Movie();
     Movie(std::string inputName, int inputYear, int inputLength, std::string inputCountry, int inputReview);
+    
     std::string getName();
     int getYear();
     int getLength();
@@ -27,6 +28,7 @@ public:
     void setLength(int inputLength);
     void setCountry(std::string inputCountry);
     void setReview(int inputReview);
+    
     ~Movie();
 
 };

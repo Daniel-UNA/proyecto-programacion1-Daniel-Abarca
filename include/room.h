@@ -15,12 +15,15 @@ public:
 
     Room();
     Room(int intputRoomId, int inputNumOfSeats, int inputPrice);
+
     int getRoomId();
     int getNumOfSeats();
     int getPrice();
     void setRoomId(int inputRoomId);
     void setNumOfSeats(int inputNumOfSeats);
     void setPrice(int inputPrice);
+
+    ~Room();
 
 };
 
