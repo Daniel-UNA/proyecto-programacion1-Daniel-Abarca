@@ -1,7 +1,7 @@
 #include "movie.h"
 
 
-MOVIE::MOVIE() {
+Movie::Movie() {
     name = "NONE";
     year = 1900;
     country = "NONE";
@@ -10,7 +10,7 @@ MOVIE::MOVIE() {
 
 }
 
-MOVIE::MOVIE(std::string inputName, int inputYear, int inputLength, std::string inputCountry, int inputReview) {
+Movie::Movie(std::string inputName, int inputYear, int inputLength, std::string inputCountry, int inputReview) {
     name = inputName;
     year = inputYear;
     country = inputCountry;
@@ -24,34 +24,34 @@ MOVIE::MOVIE(std::string inputName, int inputYear, int inputLength, std::string 
     std::cout << "Fuera de rango. Usando variable predeterminada." << std::endl;
 }
 
-std::string MOVIE::getName() { return name; }
+std::string Movie::getName() { return name; }
 
-int MOVIE::getYear() { return year; }
+int Movie::getYear() { return year; }
 
-int MOVIE::getLength() { return length; }
+int Movie::getLength() { return length; }
 
-std::string MOVIE::getCountry() { return country; }
+std::string Movie::getCountry() { return country; }
 
-int MOVIE::getReview() { return (int)review; }
+int Movie::getReview() { return (int)review; }
 
 
-void MOVIE::setName(std::string inputName) {
+void Movie::setName(std::string inputName) {
     name = inputName;
 }
 
-void MOVIE::setYear(int inputYear) {
+void Movie::setYear(int inputYear) {
     year = inputYear;
 }
 
-void MOVIE::setLength(int inputLength){
+void Movie::setLength(int inputLength){
     length = inputLength;
 }
 
-void MOVIE::setCountry(std::string inputCountry) {
+void Movie::setCountry(std::string inputCountry) {
     country = inputCountry;
 }
 
-void MOVIE::setReview(int inputReview) {
+void Movie::setReview(int inputReview) {
     if((inputReview < UCHAR_MAX) && (inputReview > 0)) {
         review = (unsigned char)inputReview;
         return;
@@ -61,6 +61,6 @@ void MOVIE::setReview(int inputReview) {
     std::cout << "Fuera de rango. Usando variable predeterminada." << std::endl;
 }
 
-MOVIE::~MOVIE() {
+Movie::~Movie() {
     //Movie has gone.
 }

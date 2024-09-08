@@ -4,8 +4,9 @@
 
 #include <iostream>
 
-class MOVIE {
+class Movie {
 private:
+
     std::string name;
     int year;
     int length;
@@ -13,8 +14,9 @@ private:
     unsigned char review;
 
 public:
-    MOVIE();
-    MOVIE(std::string inputName, int inputYear, int inputLength, std::string inputCountry, int inputReview);
+
+    Movie();
+    Movie(std::string inputName, int inputYear, int inputLength, std::string inputCountry, int inputReview);
     std::string getName();
     int getYear();
     int getLength();
@@ -25,7 +27,8 @@ public:
     void setLength(int inputLength);
     void setCountry(std::string inputCountry);
     void setReview(int inputReview);
-    ~MOVIE();
+    ~Movie();
+
 };
 
 
