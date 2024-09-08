@@ -1,36 +1,31 @@
 #include "room.h"
 
-Room::Room()
-{
+Room::Room() {
+    roomId = 0;
+    numOfSeats = 0;
+    price = 0;
 }
 
-Room::Room(int intputRoomId, int inputNumOfSeats, int inputPrice)
-{
+Room::Room(int intputRoomId, int inputNumOfSeats, int inputPrice) {
+    roomId = intputRoomId;
+    numOfSeats = inputNumOfSeats;
+    price = inputPrice;
 }
 
-int Room::getRoomId()
-{
-    return 0;
+int Room::getRoomId() { return roomId; }
+
+int Room::getNumOfSeats() { return numOfSeats; }
+
+int Room::getPrice() { return price; }
+
+void Room::setRoomId(int inputRoomId) {
+    roomId = inputRoomId;
 }
 
-int Room::getNumOfSeats()
-{
-    return 0;
+void Room::setNumOfSeats(int inputNumOfSeats) {
+    numOfSeats = inputNumOfSeats;
 }
 
-int Room::getPrice()
-{
-    return 0;
-}
-
-void Room::setRoomId(int inputRoomId)
-{
-}
-
-void Room::setNumOfSeats(int inputNumOfSeats)
-{
-}
-
-void Room::setPrice(int inputPrice)
-{
+void Room::setPrice(int inputPrice) {
+    price = inputPrice;
 }
