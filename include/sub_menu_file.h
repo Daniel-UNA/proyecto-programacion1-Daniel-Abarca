@@ -1,3 +1,4 @@
+#pragma once
 #ifndef SUB_MENU_FILE_H
 #define SUB_MENU_FILE_H
 
