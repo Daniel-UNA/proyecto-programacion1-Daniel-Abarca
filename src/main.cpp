@@ -1,27 +1,9 @@
-#include <iostream>
-#include "menu.h"
-using namespace std;
-
-bool isProgramRunnig;
+#include "program.h"
 
 int main(void){
-    Menu *menu = new Menu(4);
-    menu->createMenu(0, new SubMenuFile());
-    menu->createMenu(1, new SubMenuService());
-    menu->createMenu(2, new SubMenuReservation());
-    menu->createMenu(3, new SubMenuSale());
-    int option;
-    isProgramRunnig = true;
-
-    while (isProgramRunnig){
-        option = 0;
-        menu->printMenu();
-        scanf("%d",&option);
-        menu->action(option,&isProgramRunnig);
-        clearScreen();
-    }
-    
-    menu->~Menu();
-
+    Program program;
+    program.start();
+    program.run();
+    program.~Program();
     return 0;
 }

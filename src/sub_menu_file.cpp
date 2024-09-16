@@ -1,10 +1,14 @@
 #include "sub_menu_file.h"
 
 SubMenuFile::SubMenuFile(){
+    aboutme =   "Proyecto del curso programacion 1 de la carrera Ing. Sistemas \n"
+                "Creado por Daniel Abarca U.";
     description = "Archivo";
 }
 
 SubMenuFile::SubMenuFile(std::string inputDescription){
+    aboutme =   "Proyecto del curso programacion 1 de la carrera Ing. Sistemas \n"
+                "Creado por Daniel Abarca U.";
     description = inputDescription;
 }
 
@@ -29,7 +33,7 @@ void SubMenuFile::action(bool* programStatePtr){
 
         if (option == 1){
             clearScreen();
-            std::cout << "Programa creado por Daniel Abarca." << std::endl;
+            std::cout << aboutme << std::endl;
             getchar();
         }
 

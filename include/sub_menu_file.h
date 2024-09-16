@@ -8,6 +8,7 @@
 
 class SubMenuFile : public SubMenu{
 private:
+    std::string aboutme;
     std::string description;
 public:
 

@@ -9,7 +9,7 @@ private:
     int roomId;
     int numOfSeats;
     int price;
-    
+    char* seats;
 
 public:
 
@@ -19,6 +19,8 @@ public:
     int getRoomId();
     int getNumOfSeats();
     int getPrice();
+    char retSeatState(int seatId);
+    void setSeatState(int seatID, char state);
     void setRoomId(int inputRoomId);
     void setNumOfSeats(int inputNumOfSeats);
     void setPrice(int inputPrice);
