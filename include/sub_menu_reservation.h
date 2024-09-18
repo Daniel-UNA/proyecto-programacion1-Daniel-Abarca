@@ -8,6 +8,11 @@
 class SubMenuReservation : public SubMenu{
 private:
     std::string description;
+    void printMovies();
+    bool checkReservation(int movieId);
+    void makeReservation(int scheduleId ,int roomId, int row, int col);
+    void showRoom(int scheduleId ,int roomId);
+    void showSchedule(int movieId);
 public:
 
     SubMenuReservation(std::string inputDescription);

@@ -5,9 +5,13 @@
 #include <iostream>
 #include "sub_menu.h"
 
+
 class SubMenuService : public SubMenu{
 private:
     std::string description;
+    void printMovies();
+    void printRooms();
+    void printSchedules();
 public:
 
     SubMenuService(std::string inputDescription);

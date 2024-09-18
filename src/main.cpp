@@ -1,9 +1,21 @@
 #include "program.h"
 
 int main(void){
-    Program program;
-    program.start();
-    program.run();
-    program.~Program();
+
+    try
+    {
+        Program program;
+        program.start();
+        program.initializeMovies();
+        program.initializeSchedules();
+        program.run();
+        program.~Program();
+    
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
+    }
     return 0;
+
 }

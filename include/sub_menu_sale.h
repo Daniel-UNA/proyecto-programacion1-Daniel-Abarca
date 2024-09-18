@@ -8,6 +8,8 @@
 class SubMenuSale : public SubMenu{
 private:
     std::string description;
+    void submitSale(std::string saleId);
+    std::string getValue(const std::string& str, const std::string& tag);
 public:
 
     SubMenuSale(std::string inputDescription);

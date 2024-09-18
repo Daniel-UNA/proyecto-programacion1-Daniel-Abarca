@@ -4,6 +4,14 @@
 
 #include <iostream>
 #include "clear.h"
+#include "movie.h"
+#include "schedule.h"
+
+extern Movie** moviePtr;
+extern Schedule** schedulePtr;
+extern int* nRoomsPtr;
+extern int* nMoviesPtr;
+extern int* nSchedulePtr;
 
 
 class SubMenu {

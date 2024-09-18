@@ -1,6 +1,6 @@
 # Variables
 CC = g++
-CFLAGS = -Wall -std=c++11
+CFLAGS = -Wextra -Wall -std=c++11 -O3
 LDFLAGS = -static-libgcc -static-libstdc++
 DEBUGFLAGS = -g
 SRC_DIR = src
