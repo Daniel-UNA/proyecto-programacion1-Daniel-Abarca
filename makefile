@@ -1,7 +1,7 @@
 # Variables
 CC = g++
 CFLAGS = -Wextra -Wall -std=c++11 -O3
-LDFLAGS = -static -static-libgcc -static-libstdc++ -Wl,-Bstatic -lstdc++ -lpthread -Wl,-Bdynamic
+LDFLAGS = -static-libgcc -static-libstdc++ -Wl, -static -Bstatic -lstdc++ -lpthread -Wl,-Bdynamic
 DEBUGFLAGS = -g
 SRC_DIR = src
 BUILD_DIR = build/bin
