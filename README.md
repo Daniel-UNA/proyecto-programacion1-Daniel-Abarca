@@ -4,3 +4,4 @@ Compilar: make all\
 Recompilar: make rebuild\
 Limpiar archivos Obj: make clean_obj\
 Limpiar todo: make clean
+
